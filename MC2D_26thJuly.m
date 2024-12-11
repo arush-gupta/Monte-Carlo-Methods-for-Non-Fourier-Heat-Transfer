@@ -402,7 +402,7 @@ annotation('line',[0.628426165251233 0.628426165251233],...
 %    annotation('textbox',[0.485895833333333 0.0197585071350165 0.0333750000000002 0.0384193194291987],'String',tl,'EdgeColor','none')
 %    annotation('textbox',[0.00992857142857141 0.00714285714285714 0.347809523809524 0.0555555555555557],'String',tinit,'EdgeColor','none')
    %    axis([0 L Teq+min(min(T)) Teq+max(max(T))]);
-   %    annotation('textbox',[0.199214285714286 0.945238095238095 0.235904761904762 0.0460317460317463],'String','Arush, Prof Dipanshu, Peraud','Edg','off');
+   %    annotation('textbox',[0.199214285714286 0.945238095238095 0.235904761904762 0.0460317460317463],'String','Arush, Peraud','Edg','off');
    %    colorbar;
    time = i*unit_time;
    time = strcat(num2str(time),'ns');
