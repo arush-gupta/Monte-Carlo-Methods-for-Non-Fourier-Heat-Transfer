@@ -1,10 +1,11 @@
 # Monte Carlo Simulations for Non-Fourier Heat Transfer Using Boltzmann Transport Equation
 
-This repository contains the code and report for a research project focused on modeling heat transfer at the nanoscale, where Fourier's law of heat conduction no longer holds. The project utilizes Monte Carlo simulations to model phonon transport at the nanoscale, an important aspect of understanding thermal conductivity in nanomaterials.
+
+This repository contains the code and report for a research project focused on modeling heat transfer at the nanoscale, where Fourier's law of heat conduction no longer holds. The project extends Peraud's one-dimensional heat transfer solver based on the Boltzmann Transport Equation (BTE) and Monte Carlo methods to simulate phonon creation, annihilation, and transport. The solver is extended to two dimensions, with careful attention to the mesh Fourier number to improve accuracy.
 
 ## Overview
 
-At the nanoscale, phonon transport deviates from the classical diffusive behavior described by Fourier's law. Instead, phonons exhibit ballistic or quasi-ballistic transport, which requires a more complex treatment of heat transfer. This project implements a one-dimensional heat transfer solver based on the Boltzmann Transport Equation (BTE) and Monte Carlo methods to simulate phonon creation, annihilation, and transport. The solver is then extended to two dimensions with careful attention to the mesh Fourier number to improve accuracy.
+At the nanoscale, phonon transport deviates from the classical diffusive behavior described by Fourier's law. Instead, phonons exhibit ballistic or quasi-ballistic transport, which requires a more complex treatment of heat transfer. This project extends the one-dimensional heat transfer solver proposed by Peraud, based on the BTE and Monte Carlo methods, to simulate phonon transport. The extension to two dimensions incorporates geometric formulations for phonon propagation and ensures accuracy by considering the mesh Fourier number.
 
 ## Key Concepts
 
@@ -14,8 +15,7 @@ At the nanoscale, phonon transport deviates from the classical diffusive behavio
 
 ## Features
 
-- **1D Heat Transfer Solver**: Based on the BTE and Monte Carlo methods, simulating phonon transport.
-- **2D Extension**: The solver is extended to 2D, incorporating geometric formulations for phonon propagation.
+- **1D to 2D Extension**: Extends JP Peraud's 1D heat transfer solver to two dimensions for more accurate modeling of phonon transport.
 - **Mesh Fourier Number Consideration**: Ensures that the solver is accurate at the nanoscale by properly accounting for the mesh Fourier number.
 
 ## Requirements
